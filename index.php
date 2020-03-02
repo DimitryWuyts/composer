@@ -41,25 +41,27 @@ if  (isset($_GET ['type'])) {
             $log->pushHandler(new StreamHandler(__DIR__ . '/logs/yellow.log', Logger::WARNING));
             // add records to the log
             $log->warning($_GET ['message']);
-            $nativeMailerHandler = new \Monolog\Handler\NativeMailerHandler($to, $subject, $from,logger::WARNING);
             break;
 
         case  'ERROR':
             $log->pushHandler(new StreamHandler(__DIR__ . '/logs/red.log', Logger::ERROR));
             // add records to the log
             $log->error($_GET ['message']);
+            $nativeMailerHandler = new \Monolog\Handler\NativeMailerHandler($to, $subject, $from,logger::ERROR);
             break;
 
         case 'CRITICAL':
             $log->pushHandler(new StreamHandler(__DIR__ . '/logs/red.log', Logger::CRITICAL));
             // add records to the log
             $log->critical($_GET ['message']);
+            $nativeMailerHandler = new \Monolog\Handler\NativeMailerHandler($to, $subject, $from,logger::CRITICAL);
             break;
 
         case 'ALERT':
             $log->pushHandler(new StreamHandler(__DIR__ . '/logs/red.log', Logger::ALERT));
             // add records to the log
             $log->alert($_GET ['message']);
+            $nativeMailerHandler = new \Monolog\Handler\NativeMailerHandler($to, $subject, $from,logger::ALERT);
             break;
 
         case 'EMERGENCY':
