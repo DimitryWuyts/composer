@@ -1,0 +1,8 @@
+[2020-03-02T08:12:57.549072-05:00] logger.ALERT: dimitry [] []
+[2020-03-02T08:13:20.420264-05:00] logger.ALERT: dree [] []
+[2020-03-02T08:15:21.919614-05:00] logger.ALERT: test [] []
+[2020-03-02T08:15:21.920392-05:00] logger.EMERGENCY: test [] []
+[2020-03-02T08:16:47.265601-05:00] logger.ALERT: test [] []
+[2020-03-02T08:16:47.266584-05:00] logger.EMERGENCY: test [] []
+[2020-03-02T08:16:51.443407-05:00] logger.ALERT: dimitry [] []
+[2020-03-02T08:16:51.444148-05:00] logger.EMERGENCY: dimitry [] []
