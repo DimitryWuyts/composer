@@ -10,7 +10,7 @@ use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 
 $from = "x@gmail.com";
-$to = "dimiw1337@hotmail.com";
+$to = "dimi@hotmail.com";
 $subject = "Logger \Monolog\Handler\NativeMailerHandler";
 $body = 'body';
 
